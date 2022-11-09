@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import *
 
 # Create your views here.
 
@@ -11,7 +12,8 @@ def contact(request):
         email = request.POST['email']
         subject = request.POST['subject']
         message = request.POST['message']
-        return render(request, "contact.html", {"name" : name})
+        return render(request, "contact.html", {"name": name})
+        data.save()
 
     else:
         return render(request, "contact.html")
