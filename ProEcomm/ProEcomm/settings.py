@@ -115,6 +115,13 @@ STATICFILES_DIRS = [
     BASE_DIR / "static"
 ]
 
+# Email Setting
+
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = '1025'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field

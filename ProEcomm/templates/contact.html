@@ -189,6 +189,10 @@
     </div>
     <!-- Breadcrumb End -->
 
+    <center>
+        <h2>Thanks {{ name }}!</h2>
+        <p>We recieved your email</p>
+    </center>
 
     <!-- Contact Start -->
     <div class="container-fluid">
@@ -197,7 +201,7 @@
             <div class="col-lg-7 mb-5">
                 <div class="contact-form bg-light p-30">
                     <div id="success"></div>
-                    <form action="{% url 'contact' %}" method="POST" name="sentMessage" id="contactForm" novalidate="novalidate">
+                    <form action="{% url 'contact' %}" name="sentMessage" id="contactForm" novalidate="novalidate">
                         {% csrf_token %}
                         <div class="control-group">
 
